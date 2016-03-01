@@ -12,7 +12,6 @@
     <Filelist>
         <File Permission="644" Location="Custom/Kernel/Modules/AgentTicketChangeArticleType.pm" />
         <File Permission="644" Location="Custom/Kernel/Output/HTML/FilterElementPost/ChangeArticleType.pm" />
-        <File Permission="644" Location="Custom/Kernel/Output/HTML/Standard/AgentTicketChangeArticleType.dtl" />
         <File Permission="644" Location="Custom/Kernel/Output/HTML/Standard/AgentTicketChangeArticleType.tt" />
         <File Permission="644" Location="Kernel/Config/Files/ChangeArticleType.xml" />
         <File Permission="644" Location="Kernel/Language/de_ChangeArticleType.pm" />
