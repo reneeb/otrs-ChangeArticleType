@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otrs_config version="1.0" init="Config">
+    <ConfigItem Name="Frontend::Output::FilterElementPost###OutputFilterArticleMenuChangeArticleType" Required="0" Valid="1">
+        <Description Translatable="1">Add a link in the article menu to change the article type.</Description>
+        <Group>ChangeArticleType</Group>
+        <SubGroup>OutputFilter</SubGroup>
+        <Setting>
+            <Hash>
+                <Item Key="Module">Kernel::Output::HTML::FilterElementPost::ChangeArticleType</Item>
+                <Item Key="Templates">
+                    <Hash>
+                        <Item Key="AgentTicketZoom">1</Item>
+                    </Hash>
+                </Item>
+            </Hash>
+        </Setting>
+    </ConfigItem>
+    <ConfigItem Name="Frontend::Module###AgentTicketChangeArticleType" Required="0" Valid="1">
+        <Description Translatable="1">Frontend module registration for the agent interface.</Description>
+        <Group>ChangeArticleType</Group>
+        <SubGroup>Frontend::Agent::ModuleRegistration</SubGroup>
+        <Setting>
+            <FrontendModuleReg>
+                <Description>Change Article Type</Description>
+                <Title>Change Article Type</Title>
+                <NavBarName>Ticket</NavBarName>
+                <Loader>
+                    <JavaScript>Core.Agent.TicketAction.js</JavaScript>
+                </Loader>
+            </FrontendModuleReg>
+        </Setting>
+    </ConfigItem>
+    <ConfigItem Name="ChangeArticleType::ChangeableTypes" Required="0" Valid="1">
+        <Description Translatable="1">Define what article types can be changed.</Description>
+        <Group>ChangeArticleType</Group>
+        <SubGroup>Core</SubGroup>
+        <Setting>
+            <Array>
+                <Item>email-external</Item>
+                <Item>email-internal</Item>
+                <Item>note-external</Item>
+                <Item>note-internal</Item>
+            </Array>
+        </Setting>
+    </ConfigItem>
+</otrs_config>

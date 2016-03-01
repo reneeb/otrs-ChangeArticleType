@@ -1,0 +1,52 @@
+# --
+# AgentTicketChangeArticleType.tt - form to set time budget for a ticket
+# Copyright (C) 2016 Perl-Services.de, http://perl-services.de
+# --
+# This software comes with ABSOLUTELY NO WARRANTY. For details, see
+# the enclosed file COPYING for license information (AGPL). If you
+# did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
+# --
+
+<form action="[% Env("CGIHandle") %]" method="post" name="compose" id="Compose" class="Validate PreventMultipleSubmits">
+    <input type="hidden" name="Action" value="[% Env("Action") %]"/>
+    <input type="hidden" name="Subaction" value="ChangeType"/>
+    <input type="hidden" name="TicketID" value="[% Data.TicketID | html %]"/>
+    <input type="hidden" name="ArticleID" value="[% Data.ArticleID | html %]"/>
+
+    <div class="LayoutPopup ARIARoleMain">
+        <div class="Header">
+            <h1>
+                [% Translate("Set new article type") | html %]
+            </h1>
+            <p>
+                <a class="CancelClosePopup" href="#">[% Translate("Cancel & close window") | html %]</a>
+            </p>
+        </div>
+        <div class="Content">
+
+            <fieldset class="TableLike FixedLabel">
+                <div class="Row">
+                    <label for="ArticleTypeID" class="Mandatory">
+                        <span class="Marker">*</span>
+                        [% Translate("Article Type") | html %]:
+                    </label>
+                    <div class="Field">
+                        [% Data.ArticleTypeStrg %]
+                    </div>
+                    <div class="Clear"></div>
+                </div>
+
+            </fieldset>
+        </div>
+        <div class="Footer">
+            <button class="Primary" id="submitRichText" accesskey="g" title="[% Translate("Submit") | html %] (g)" type="submit" value="[% Translate("Submit") | html %]">[% Translate("Submit") | html %]</button>
+        </div>
+    </div>
+</form>
+
+#Layers
+[% WRAPPER JSOnDocumentComplete %]
+<script type="text/javascript">//<![CDATA[
+    Core.Agent.TicketAction.Init();
+//]]></script>
+[% END %]
