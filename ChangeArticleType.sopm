@@ -2,8 +2,8 @@
 <otrs_package version="1.0">
     <!-- GENERATED WITH OTRS::OPM::Maker::Command::sopm (1.33) -->
     <Name>ChangeArticleType</Name>
-    <Version>4.0.1</Version>
-    <Framework>4.0.x</Framework>
+    <Version>5.0.1</Version>
+    <Framework>5.0.x</Framework>
     <Vendor>Perl-Services.de</Vendor>
     <URL>http://www.perl-services.de</URL>
     <Description Lang="de">Artikeltyp ändern...</Description>
@@ -12,7 +12,7 @@
     <Filelist>
         <File Permission="644" Location="Custom/Kernel/Modules/AgentTicketChangeArticleType.pm" />
         <File Permission="644" Location="Custom/Kernel/Output/HTML/FilterElementPost/ChangeArticleType.pm" />
-        <File Permission="644" Location="Custom/Kernel/Output/HTML/Standard/AgentTicketChangeArticleType.tt" />
+        <File Permission="644" Location="Custom/Kernel/Output/HTML/Templates/Standard/AgentTicketChangeArticleType.tt" />
         <File Permission="644" Location="Kernel/Config/Files/ChangeArticleType.xml" />
         <File Permission="644" Location="Kernel/Language/de_ChangeArticleType.pm" />
         <File Permission="644" Location="doc/ChangeArticleType.json" />
