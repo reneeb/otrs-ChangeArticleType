@@ -10,7 +10,8 @@
     },
     "license": "GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007",
     "description" : {
-        "en": "Change type of articles...",
-        "de": "Artikeltyp ändern..."
+        "en": "Change type of articles.",
+        "de": "Artikeltyp ändern.",
+        "hu": "Bejegyzéstípusok megváltoztatása."
     }
 }

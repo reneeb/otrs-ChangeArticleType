@@ -1,5 +1,5 @@
 # --
-# Kernel/Language/de_ChangeArticleType.pm - the german translation of ChangeArticleType
+# Kernel/Language/de_ChangeArticleType.pm - the German translation of ChangeArticleType
 # Copyright (C) 2016 Perl-Services, http://www.perl-services.de
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
@@ -11,7 +11,6 @@ package Kernel::Language::de_ChangeArticleType;
 
 use strict;
 use warnings;
-
 use utf8;
 
 sub Data {
@@ -21,8 +20,21 @@ sub Data {
 
     return if ref $Lang ne 'HASH';
 
-    $Lang->{"Set new article type"} = 'Neuen Artikeltypen setzen';
-    $Lang->{"Change Article Type"}  = 'Artikeltyp ändern';
+    # Custom/Kernel/Output/HTML/FilterElementPost/ChangeArticleType.pm
+    $Lang->{'Change Article Type'} = 'Artikeltyp ändern';
+
+    # Custom/Kernel/Output/HTML/Templates/Standard/AgentTicketChangeArticleType.tt
+    $Lang->{'Set new article type'} = 'Neuen Artikeltypen setzen';
+    $Lang->{'Cancel & close window'} = '';
+    $Lang->{'Article Type'} = 'Artikeltyp';
+    $Lang->{'Submit'} = 'Übermitteln';
+
+    # Kernel/Config/Files/ChangeArticleType.xml
+    $Lang->{'Adds a link to the article menu to change the article type.'} = '';
+    $Lang->{'Frontend module registration for the agent interface.'} =
+        'Frontend-Modulregistrierung im Agent-Interface.';
+    $Lang->{'Change article type.'} = 'Artikeltyp ändern.';
+    $Lang->{'Defines what article types can be changed.'} = '';
 
     return 1;
 }
