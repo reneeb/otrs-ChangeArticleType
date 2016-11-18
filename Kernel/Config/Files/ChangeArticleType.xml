@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_config version="1.0" init="Config">
     <ConfigItem Name="Frontend::Output::FilterElementPost###OutputFilterArticleMenuChangeArticleType" Required="0" Valid="1">
-        <Description Translatable="1">Add a link in the article menu to change the article type.</Description>
+        <Description Translatable="1">Adds a link to the article menu to change the article type.</Description>
         <Group>ChangeArticleType</Group>
         <SubGroup>OutputFilter</SubGroup>
         <Setting>
@@ -21,8 +21,8 @@
         <SubGroup>Frontend::Agent::ModuleRegistration</SubGroup>
         <Setting>
             <FrontendModuleReg>
-                <Description>Change Article Type</Description>
-                <Title>Change Article Type</Title>
+                <Description Translatable="1">Change article type.</Description>
+                <Title Translatable="1">Change Article Type</Title>
                 <NavBarName>Ticket</NavBarName>
                 <Loader>
                     <JavaScript>Core.Agent.TicketAction.js</JavaScript>
@@ -31,7 +31,7 @@
         </Setting>
     </ConfigItem>
     <ConfigItem Name="ChangeArticleType::ChangeableTypes" Required="0" Valid="1">
-        <Description Translatable="1">Define what article types can be changed.</Description>
+        <Description Translatable="1">Defines what article types can be changed.</Description>
         <Group>ChangeArticleType</Group>
         <SubGroup>Core</SubGroup>
         <Setting>

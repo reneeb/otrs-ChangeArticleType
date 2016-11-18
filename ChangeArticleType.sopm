@@ -6,8 +6,9 @@
     <Framework>5.0.x</Framework>
     <Vendor>Perl-Services.de</Vendor>
     <URL>http://www.perl-services.de</URL>
-    <Description Lang="de">Artikeltyp ändern...</Description>
-    <Description Lang="en">Change type of articles...</Description>
+    <Description Lang="de">Artikeltyp ändern.</Description>
+    <Description Lang="en">Change type of articles.</Description>
+    <Description Lang="hu">Bejegyzéstípusok megváltoztatása.</Description>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
     <Filelist>
         <File Permission="644" Location="Custom/Kernel/Modules/AgentTicketChangeArticleType.pm" />
@@ -15,6 +16,7 @@
         <File Permission="644" Location="Custom/Kernel/Output/HTML/Templates/Standard/AgentTicketChangeArticleType.tt" />
         <File Permission="644" Location="Kernel/Config/Files/ChangeArticleType.xml" />
         <File Permission="644" Location="Kernel/Language/de_ChangeArticleType.pm" />
+        <File Permission="644" Location="Kernel/Language/hu_ChangeArticleType.pm" />
         <File Permission="644" Location="doc/ChangeArticleType.json" />
     </Filelist>
 </otrs_package>
